@@ -5,9 +5,7 @@ var testePlugin = {
             errorCallback, // error callback function
             'TestePlugin', // mapped to our native Java class called "TestePlugin"
             'doAlert', // with this action name
-            {
-				"message": "xD"
-			}
+            [{"message": "xD"}]
         );
     }
 }
