@@ -1,4 +1,4 @@
-var testePlugin = {
+var TestePlugin = {
     create: function(successCallback, errorCallback) {
         cordova.exec(
             successCallback, // success callback function
@@ -10,4 +10,4 @@ var testePlugin = {
     }
 }
 
-module.exports = testePlugin;
+module.exports = TestePlugin;
