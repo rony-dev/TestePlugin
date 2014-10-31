@@ -12,7 +12,7 @@ import java.io.File;
 
 public class TestePlugin extends CordovaPlugin {
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, JSONObject args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("doAlert")) {
             String message = args.getString("message");
 			this.alert(message, callbackContext);
