@@ -2,14 +2,14 @@ package com.labofclouds.cordova.testePlugin;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
+import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class TestePlugin extends CordovaPlugin {
     @Override
-    public boolean execute(String action, JSONObject args, CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("doAlert")) {
-            String message = args.getString("message");
+            String message = args.getString(0);
 			this.alert(message, callbackContext);
 			
             return true;
