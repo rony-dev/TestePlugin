@@ -10,7 +10,7 @@
  
  
     <js-module src="www/testePlugin.js" name="TestePlugin">
-            <clobbers target="testePlugin" />
+            <clobbers target="window.testePlugin" />
 	</js-module>
  
     <!-- android -->
