@@ -1,14 +1,9 @@
 package com.labofclouds.cordova.testePlugin;
 
-import android.content.Intent;
-import android.net.Uri;
-
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
-import org.json.JSONArray;
 import org.json.JSONException;
-
-import java.io.File;
+import org.json.JSONObject;
 
 public class TestePlugin extends CordovaPlugin {
     @Override
